@@ -11,17 +11,23 @@ Syllabus
 The Modern Development Environment
 ----------------------------------
 
-* Deploying with Vagrant and Ansible
+* Background
+  * `pip` and `setuptools`
+  * Why not use plain `pip` to install?
 
+* Deploying with Vagrant and Ansible
   * Plain vagrant
     * No need to learn a lot about virtual machines
     * Great for developers, automatable
   * Vagrant with ansible
-  * Installing packages via apt
-  * Using pip (python-virtualenv, virtualenvwrapper)
+    * Installing packages via apt
 
-* Packaging
-  * setuptools
+* Packaging your code
+  * setuptools (superset of distutils)
+  * `setup.py`
+  * requirements.txt
+  * wheels
+  * pypi
 
 * Developing with virtualenv, pip
   * Plain virtualenv
