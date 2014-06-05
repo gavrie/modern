@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure python-virtualenv is at the latest version
+      apt: name=python-virtualenv state=latest
+    - name: jenkins
+      apt: name=jenkins state=latest
+    - name: git
+      apt: name=git state=latest
