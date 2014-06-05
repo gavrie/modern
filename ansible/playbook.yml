@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+    - name: virtualenv
+      apt: name=virtualenvwrapper state=latest
+    - name: coverage
+      apt: name=python-coverage state=latest
+    - name: jenkins
+      apt: name=jenkins state=latest
+    - name: git
+      apt: name=git state=latest

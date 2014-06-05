@@ -58,7 +58,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # information on available options.
 
   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "playbook.yml"
+    ansible.playbook = "ansible/playbook.yml"
     # ansible.extra_vars = { ansible_ssh_user: 'root' }
     ansible.sudo = true
     ansible.limit = 'all'

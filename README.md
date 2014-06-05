@@ -14,8 +14,8 @@ The Modern Development Environment
 * Deploying with Vagrant and Ansible
 
   * Plain vagrant
-     * No need to learn a lot about virtual machines
-     * Great for developers, automatable
+    * No need to learn a lot about virtual machines
+    * Great for developers, automatable
   * Vagrant with ansible
   * Installing packages via apt
   * Using pip (python-virtualenv, virtualenvwrapper)
@@ -46,10 +46,13 @@ Test Driven Development (TDD)
 * coverage
 * Continuous Integration (CI)
   * Jenkins
-     * apt: install git jenkins (via ansible or aptitude)
-     * Add port forwarding in vagrantfile
-     * Add jenkins git plugin
-  * Integration with coverage
+    * apt: install git jenkins (via ansible or aptitude)
+    * Add port forwarding in vagrantfile
+    * Add jenkins git plugin
+    * Set up job to build `/vagrant` dir
+  * Integration with `coverage`
+    pip install pytest-cov
+    ./run_tests.sh --cov modern
 
 Unicode awareness
 -----------------
