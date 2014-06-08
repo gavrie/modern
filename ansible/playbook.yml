@@ -5,7 +5,18 @@
       apt: name=virtualenvwrapper state=latest
     - name: coverage
       apt: name=python-coverage state=latest
-    - name: jenkins
-      apt: name=jenkins state=latest
     - name: git
       apt: name=git state=latest
+    - name: jenkins_setup
+      script: setup_jenkins.sh
+    - name: jenkins_install
+      apt: name=jenkins state=latest
+    - name: pep8
+      pip: name=pep8
+    - name: pyflakes
+      pip: name=pyflakes
+    - name: pylint
+      pip: name=pylint
+    - name: pytest
+      pip: name=pytest
+
