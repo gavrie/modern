@@ -11,12 +11,14 @@
       script: setup_jenkins.sh
     - name: jenkins_install
       apt: name=jenkins state=latest
+    - name: setup_venv
+      script: venv_setup.sh
     - name: pep8
-      pip: name=pep8
+      pip: name=pep8 virtualenv=/home/vagrant/.virtualenvs/my_env/
     - name: pyflakes
-      pip: name=pyflakes
+      pip: name=pyflakes virtualenv=/home/vagrant/.virtualenvs/my_env/
     - name: pylint
-      pip: name=pylint
+      pip: name=pylint virtualenv=/home/vagrant/.virtualenvs/my_env/
     - name: pytest
-      pip: name=pytest
+      pip: name=pytest virtualenv=/home/vagrant/.virtualenvs/my_env/
 
