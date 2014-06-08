@@ -46,8 +46,7 @@ Test Driven Development (TDD)
 -----------------------------
 
 * Introduction to TDD
-* Writing effective Unit Tests with py.test
-  * Come up with good exercises — first without mock, then with mock
+* Writing effective Unit Tests with `py.test`
 * Mock
 * coverage
 * Continuous Integration (CI)
@@ -75,5 +74,5 @@ Resources
 
 
 <!--
-vim:lbr:wrap:nolist
+vim:lbr:wrap:nolist:ft=markdown
 -->
