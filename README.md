@@ -15,6 +15,11 @@ The Modern Development Environment
   * `pip` and `setuptools`
   * Why not use plain `pip` to install?
 
+* Developing with virtualenv, pip
+  * Plain virtualenv
+  * virtualenvwrapper
+  * hooks: postactivate etc.
+
 * Deploying with Vagrant and Ansible
   * Plain vagrant
     * No need to learn a lot about virtual machines
@@ -28,11 +33,6 @@ The Modern Development Environment
   * requirements.txt
   * wheels
   * pypi
-
-* Developing with virtualenv, pip
-  * Plain virtualenv
-  * virtualenvwrapper
-  * hooks: postactivate etc.
 
 * Checking code
   * pep8
