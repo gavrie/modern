@@ -5,7 +5,20 @@
       apt: name=virtualenvwrapper state=latest
     - name: coverage
       apt: name=python-coverage state=latest
-    - name: jenkins
-      apt: name=jenkins state=latest
     - name: git
       apt: name=git state=latest
+    - name: jenkins_setup
+      script: setup_jenkins.sh
+    - name: jenkins_install
+      apt: name=jenkins state=latest
+    - name: setup_venv
+      script: venv_setup.sh
+    - name: pep8
+      pip: name=pep8 virtualenv=/home/vagrant/.virtualenvs/my_env/
+    - name: pyflakes
+      pip: name=pyflakes virtualenv=/home/vagrant/.virtualenvs/my_env/
+    - name: pylint
+      pip: name=pylint virtualenv=/home/vagrant/.virtualenvs/my_env/
+    - name: pytest
+      pip: name=pytest virtualenv=/home/vagrant/.virtualenvs/my_env/
+
