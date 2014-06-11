@@ -41,14 +41,15 @@ The Modern Development Environment
 
 * Debugging: pdb++
 
+* Writing effective Unit Tests with `py.test`
+  * coverage
+
 
 Test Driven Development (TDD)
 -----------------------------
 
 * Introduction to TDD
-* Writing effective Unit Tests with `py.test`
-* Mock
-* coverage
+* Using `mock` to create mocks instead of writing stubs
 * Continuous Integration (CI)
   * Jenkins
     * apt: install git jenkins (via ansible or aptitude)
@@ -56,8 +57,8 @@ Test Driven Development (TDD)
     * Add jenkins git plugin
     * Set up job to build `/vagrant` dir
   * Integration with `coverage`
-    pip install pytest-cov
-    ./run_tests.sh --cov modern
+    * `pip install pytest-cov`
+    * `./run_tests.sh --cov modern`
 
 Unicode awareness
 -----------------
