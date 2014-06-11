@@ -17,13 +17,15 @@ def test_retrieve_nonexistent_user(users):
     with pytest.raises(LookupError):
         users.get('david')
 
+def test_delete_user(users):
+    users.create('david')
+    users.delete('david')
+    with pytest.raises(LookupError):
+        users.get('david')
+
 # def test_user_length():
 #     usernames = ['one', 'two', 'three']
 #     for index, username in usernames:
 #         assert len(users) == index
 #         users.create(username)
 
-# def test_delete_user():
-#     users.create('david')
-#     users.delete('david')
-#     assert len(users) == 0

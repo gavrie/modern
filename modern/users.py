@@ -13,6 +13,9 @@ class Users(object):
         self.users.add(username)
         return User(username)
 
+    def delete(self, username):
+        self.users.remove(username)
+
     def get(self, username):
         if username in self.users:
             return User(username)
